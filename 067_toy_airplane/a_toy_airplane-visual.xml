@@ -1,0 +1,15 @@
+<mujoco model="o0067-visual">
+  <asset>
+    <mesh name="a_toy_airplane_mesh" file="$ADDRESS/google_16k/nontextured.stl" scale="0.8 0.8 0.8"/>
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="a_toy_airplane" pos="0 0 0" mesh="a_toy_airplane_mesh" type="mesh" rgba="0.8 0.8 0.8 0.3" conaffinity="0" contype="0" mass="0.0015645812091364011" friction="0.95 0.3 0.1" group="1" condim="4"/>
+      </body>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 -0.045" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 0.03" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.005" pos="0.096 0.096 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,18 @@
+<mujoco model="o0067">
+  <asset>
+    <mesh name="a_toy_airplane_mesh" file="./google_16k/textured.msh" scale="0.8 0.8 0.8"/>
+    <texture name="tex-a_toy_airplane" file="./google_16k/texture_map.png" type="2d"/>
+    <material name="a_toy_airplane" reflectance="0.7" texrepeat="15 15" texture="tex-a_toy_airplane" texuniform="true"/>
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0.03572475763431454 0.030807398220545207 0.09092314374993266" mass="0.0015645812091364011" fullinertia="9.43995020953257e-06 7.940826855115171e-06 5.371234151048594e-06 3.6285041313882006e-23 1.0895386204604454e-22 -9.786512231260026e-23"/>
+        <geom name="a_toy_airplane" pos="0 0 0" mesh="a_toy_airplane_mesh" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" mass="0.0015645812091364011" friction="0.95 0.3 0.1"  material="a_toy_airplane" group="0" condim="4"/>
+      </body>
+      <site rgba="1 0 0 1" size="0.005" pos="0 0 -0.045" name="bottom_site"/>
+      <site rgba="0 1 0 1" size="0.005" pos="0 0 0.03" name="top_site"/>
+      <site rgba="0 0 1 1" size="0.005" pos="0.096 0.096 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>
